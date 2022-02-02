@@ -1,1 +1,70 @@
-/* This is empty for now.*/
+#root,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url("./images/temple.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2%;
+    box-shadow: 5px 5px rgba(34, 34, 34, 0.6);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.button {
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    transition: all ease 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(196, 194, 194);
+}
+
+.guruImage {
+    height: 200px;
+    margin-bottom: 50px;
+    margin-top: -250px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+}
